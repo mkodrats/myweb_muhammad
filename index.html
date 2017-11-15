@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="left" style="text-align:center">
+          <h2>Muhammad Kodrat Santoso</h2>
+          <img src="img/ava.jpg" alt="ava" class="gambar">
+          <br><br>
+          <h3 style="text-align:left"><i>Web Developer</i></h3>
+          <h3 style="text-align:left"><i>Swift Developer</i></h3>
+          <h3 style="text-align:left"><i>Student in STMIK AKAKOM</i></h3>
+
+          <div class="content-left">
+            <hr>
+          <h2 style="text-align:left">Contact</h2>
+          <table class="tg" style="text-align:left">
+            <tr>
+              <td><i class="icon-phone"></i></td>
+              <td class="tg-yw4l">+62 852 311 55 396</td>
+            </tr>
+            <tr>
+              <!-- <span class="icon-direction"></span> -->
+              <td><i class="icon-telegram"></i></td>
+              <td class="tg-yw4l">t.me/mkodrats</td>
+            </tr>
+            <tr>
+              <td><i class="icon-direction"></i></td>
+              <td class="tg-yw4l">Yogyakarta</td>
+            </tr>
+          </table>
+          <br>
+          <button type="button" name="button"><a style="color:white; text-decoration:none" href="gallery.html">Gallery</a></button>
+          <button type="button" name="button"><a style="color:white; text-decoration:none" href="index.html">Home</a></button>
+          <button onclick="getLocation()">GPS</button><br><br>
+          <button type="button" name="button"><a style="color:white; text-decoration:none" href="myapp.php">Kalkulator</a></button>
+        </div>
+
+      </div>
+      </div>
+      <div class="col-9">
+
+        <div class="right">
+          <!-- <h2 style="text-align:center">Curriculum Vitae</h2> -->
+          <div class="resume">
+            <h2>About Me</h2>
+          </div>
+
+          <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-yw4l">Nama</th>
+              <td class="tg">Muhammad Kodrat Santoso</td>
+            </tr>
+            <tr>
+              <th class="tg-yw4l">Tempat Lahir</th>
+              <td class="tg-yw4l">Tenggarong Seberang</td>
+            </tr>
+            <tr>
+              <th class="tg-yw4l">Tanggal Lahir</th>
+              <td class="tg-yw4l">31 Maret 1997</td>
+            </tr>
+            <tr>
+              <th class="tg-yw4l">Mail</th>
+              <td class="tg-yw4l">muhammadkodrat@icloud.com</td>
+            </tr>
+          </table>
+          <hr>
+          <div class="resume">
+            <h2>SKILLS</h2>
+          </div>
+
+            <div class="content">
+                <p>HTML5</p>
+                <input type="button" name="" value="50%" class="button button2">
+                <p>PHP</p>
+                <input type="button" name="" value="80%" class="button button1">
+                <p>jQuery</p>
+                <input type="button" name="" value="60%" class="button button3">
+                <p>Swift 3</p>
+                <input type="button" name="" value="40%" class="button button4">
+                <p>SQL</p>
+                <input type="button" name="" value="80%" class="button button1">
+                <p>MongoDB = 70%</p>
+                <input type="button" name="" value="70%" class="button button6">
+            </div>
+            <hr>
+            <div class="resume">
+              <h2>EXPERIENCE</h2>
+            </div>
+            <br>
+          <div class="col-8">
+            <div class="content">
+              <b>Web Developer at Media Training Center Samarinda</b>
+            </div>
+            <p>
+                Sebagain front-end dan back-end developer.
+            </p>
+          </div>
+          <div class="col-8">
+            <div class="content">
+              <b>Writer at mbahgoogel.com 2015 - 2016</b>
+            </div>
+
+            <p>Penulis blog dan rangkuman teknologi.</p>
+          </div>
+          <div class="col-8">
+            <div class="content">
+              <div class="resume">
+                <h2>Pengalaman Organiasi</h2>
+              </div>
+              <p><i>Tidak pernah mengikuti organisasi hanya beberapa komunitas </i></p>
+              <p>Indonesian Fingerstyle Guitar Community Reg. Jogja (Admin Sosial Media)</p>
+              <p>Hackintosh Indonesia (Anggota)</p>
+              <p>Rack Spira (Anggota)</p>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+  function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+  }
+
+  function showPosition(position) {
+      alert("Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude);
+  }
+  </script>
+
+</body>
+
+</html>
